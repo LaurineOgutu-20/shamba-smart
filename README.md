@@ -55,6 +55,15 @@ This project demonstrates foundational web development skills, including multi-p
 
 **Laurine Ogutu**
 
+
+## 📸 Website Screenshot
+
+### Homepage
+
+![Shamba Smart Homepage](images/Homepage.JPG)
+
+[🌐 Visit the live Shamba Smart website](https://laurineogutu-20.github.io/shamba-smart/)
+
 GitHub: [@LaurineOgutu-20](https://github.com/LaurineOgutu-20)
 
 ## 📄 License
