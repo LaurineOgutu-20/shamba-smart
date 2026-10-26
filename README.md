@@ -51,20 +51,32 @@ Shamba-Smart/
 
 This project demonstrates foundational web development skills, including multi-page website structure, styling, JavaScript functionality, and version control with Git.
 
-## 👩‍💻 Developer
+## 👩‍💻 Developer## 📸 Website Screenshots
+
+### 🏠 Homepage
+![Shamba Smart Homepage](images/Homepage.JPG)
+
+### 🌱 Crops Page
+![Shamba Smart Crops Page](images/CROPS.JPG)
+
+### 🐛 Pests Page
+![Shamba Smart Pests Page](images/PESTS.JPG)
+
+### 🦠 Diseases Page
+![Shamba Smart Diseases Page](images/DISEASES.JPG)
+
+### 📩 Contact Page
+![Shamba Smart Contact Page](images/CONTACT.JPG)
+
+---
+
+## 🌐 Visit the Live Website
+
+[**Open Shamba Smart Website**](https://laurineogutu-20.github.io/shamba-smart/)
 
 **Laurine Ogutu**
 
 
-## 📸 Website Screenshot
-
-### Homepage
-
-![Shamba Smart Homepage](images/Homepage.JPG)
-
-[🌐 Visit the live Shamba Smart website](https://laurineogutu-20.github.io/shamba-smart/)
-
-GitHub: [@LaurineOgutu-20](https://github.com/LaurineOgutu-20)
 
 ## 📄 License
 
