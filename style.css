@@ -1,0 +1,774 @@
+/* =========================================
+   SHAMBA SMART - MAIN STYLESHEET
+   ========================================= */
+
+
+/* ---------- GENERAL SETTINGS ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5faf3;
+    color: #173d22;
+    line-height: 1.6;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navbar {
+    background-color: #123d25;
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #2e7d4b;
+}
+
+
+/* ---------- HERO / HOME ---------- */
+
+.hero {
+    min-height: 570px;
+
+    padding: 70px 7%;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #e5f6dc,
+        #ffffff
+    );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #2e7d4b;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 65px;
+
+    line-height: 1.05;
+
+    margin: 15px 0;
+
+    color: #173d22;
+}
+
+.hero-content > p:not(.small-title) {
+    color: #5c705f;
+
+    font-size: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+button,
+.explore-button {
+    display: inline-block;
+
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 10px;
+
+    background-color: #2e7d4b;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    margin-right: 8px;
+
+    transition: 0.3s;
+}
+
+button:hover,
+.explore-button:hover {
+    background-color: #1d5d34;
+
+    transform: translateY(-2px);
+}
+
+
+/* ---------- HERO CARD ---------- */
+
+.hero-card {
+    background-color: white;
+
+    padding: 50px 25px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.sun {
+    font-size: 65px;
+}
+
+.farm-icons {
+    font-size: 55px;
+
+    margin: 25px 0;
+}
+
+.hero-card h2 {
+    margin-bottom: 10px;
+}
+
+
+/* ---------- DIGITAL CLOCK ---------- */
+
+.clock-section {
+    text-align: center;
+
+    padding: 45px 20px;
+
+    background-color: #123d25;
+
+    color: white;
+}
+
+.clock-section h2 {
+    margin-bottom: 10px;
+}
+
+#digitalClock {
+    font-size: 40px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+
+/* ---------- GENERAL SECTIONS ---------- */
+
+.features {
+    padding: 70px 7%;
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #2e7d4b;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+
+    margin-top: 8px;
+}
+
+
+/* ---------- PAGE HERO ---------- */
+
+.page-hero {
+    padding: 75px 7%;
+
+    background: linear-gradient(
+        135deg,
+        #e5f6dc,
+        #ffffff
+    );
+}
+
+.page-hero h1 {
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    margin: 15px 0;
+}
+
+.page-hero p:not(.small-title) {
+    color: #5c705f;
+
+    font-size: 18px;
+
+    max-width: 700px;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    border: 1px solid #dfe9dc;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.09);
+}
+
+.card-icon {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #667568;
+
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #2e7d4b;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   AGRICULTURAL IMAGES
+   ========================================= */
+
+.image-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.image-card {
+    background-color: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.image-card img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.image-card-content {
+    padding: 20px;
+}
+
+.image-card-content h3 {
+    margin-bottom: 8px;
+}
+
+.image-card-content p {
+    color: #667568;
+}
+
+
+/* ---------- CROP SELECTOR ---------- */
+
+.selector-box {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    border: 1px solid #dfe9dc;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05);
+
+    max-width: 800px;
+
+    margin: 0 auto 40px;
+}
+
+.selector-box h2 {
+    margin-bottom: 8px;
+}
+
+.selector-box p {
+    color: #667568;
+}
+
+.selector-box label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.selector-box select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #cbd9ca;
+
+    border-radius: 9px;
+
+    background-color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.info-box {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background-color: #edf8e9;
+
+    border-left: 5px solid #2e7d4b;
+
+    border-radius: 8px;
+
+    min-height: 70px;
+}
+
+
+/* ---------- TABLE ---------- */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+    padding: 16px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e1e8e0;
+}
+
+th {
+    background-color: #1b542e;
+
+    color: white;
+}
+
+tr:hover {
+    background-color: #f0f8ed;
+}
+
+
+/* ---------- LIST ---------- */
+
+.check-list {
+    background-color: white;
+
+    padding: 25px 45px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.05);
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.check-list li {
+    margin: 12px 0;
+
+    padding-left: 5px;
+}
+
+
+/* ---------- FARMING TIP ---------- */
+
+.farming-tip {
+    margin: 30px 7% 70px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    background-color: #1b542e;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.farming-tip p {
+    color: #dcebdc;
+}
+
+#tipText {
+    margin-top: 8px;
+}
+
+
+/* ---------- WELCOME MESSAGE ---------- */
+
+#welcomeMessage {
+    color: #2e7d4b;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+/* ---------- CONTACT FORM ---------- */
+
+.contact-form {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    max-width: 750px;
+
+    margin: auto;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #cbd9ca;
+
+    border-radius: 9px;
+
+    background-color: white;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #2e7d4b;
+
+    box-shadow:
+        0 0 0 3px rgba(46, 125, 75, 0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form small {
+    display: block;
+
+    color: #c62828;
+
+    min-height: 20px;
+
+    margin-top: 3px;
+}
+
+#formResult {
+    margin-top: 18px;
+
+    font-weight: bold;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #0d2f1b;
+
+    color: #dcebdc;
+
+    text-align: center;
+
+    padding: 28px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .nav-links {
+        gap: 2px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+
+        padding: 8px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding: 55px 6%;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .image-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        min-height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .page-hero h1 {
+        font-size: 40px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .farming-tip {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        margin-left: 6%;
+
+        margin-right: 6%;
+    }
+
+    #digitalClock {
+        font-size: 30px;
+    }
+
+    table {
+        display: block;
+
+        overflow-x: auto;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .hero-buttons {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    button,
+    .explore-button {
+        text-align: center;
+
+        width: 100%;
+
+        margin-right: 0;
+    }
+
+    .features {
+        padding: 50px 5%;
+    }
+
+    .contact-form {
+        padding: 22px;
+    }
+
+}
